@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             btnBrowse = new Button();
             txtFilePath = new TextBox();
             progressBar = new ProgressBar();
@@ -161,6 +162,7 @@
             Controls.Add(btnSplitVideo);
             Controls.Add(btnBrowse);
             Font = new Font("Segoe UI", 10.25F);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(0, 6, 0, 6);
             Name = "FrmHome";
             Text = "Video Auto Splitter";
